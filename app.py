@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__, template_folder='./template')
 
-model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./models/decision_tree_classifier_default_42.sav")
+model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "./models/best_decision_tree_classifier_default_42.sav")
 model = load(open(model_path, "rb"))
 
 class_dict = {
